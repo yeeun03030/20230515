@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeElement(){
+            var h1Arr = document.querySelectorAll("h1");
+            var bgArr = ["blue", "purple", "green"];
+            var textArr = ["I Love Polytech.", h1Arr[1].innerHTML, h1Arr[2].innerHTML];
+            for (var i = 0; i < h1Arr.length; i++) {
+                var el = h1Arr[i];
+                el.style.color = "white";
+                el.style.backgroundColor = bgArr[i];
+                el.innerHTML = textArr[i];
+            }
+        }
+    </script>
+</head>
+<body onload = "changeElement()">
+    <h1>poly...tech..</h1>
+    <h1>I'm student.</h1>
+    <h1>Thanks.</h1>
+</body>
+</html>
