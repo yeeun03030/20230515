@@ -10,12 +10,13 @@
         var height = 3;
         var r = 5;
         
-        var width = (r*r*PI) / height;
+        var width = ((r*r*PI) * height) / height;
 
         alert ("원기둥의 부피는 ? (π = 3.14)");
-        alert ("r * r * π = " + r * r * PI);
+        alert ("밑면의 넓이 : " + width + " | 높이 : " + height + " | 반지름 : " + r);
+        alert ("(r * r * π) * height = " + (r * r * PI) * height);
         alert ("width * height = " + width * height);
-        alert ("즉, r * r * π = width * height")
+        alert ("즉, (r * r * π) * height = width * height");
         
     </script>
 </head>
