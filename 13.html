@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 this - 필드</title>
+
+    <script>
+        var person = {
+            name: "yeeun",
+            eat: function (name) {
+                alert(this.name + "은(는) " + name + "을(를) 먹습니다."); // alert(person.name + "은(는) " + name + "을(를) 먹습니다.")
+            }
+        };
+        
+        person.eat("갈비찜");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
