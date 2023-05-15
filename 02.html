@@ -7,8 +7,10 @@
     <title>Java Script while문</title>
     <script>
         var arr = ["apple", "pear", "banana", "kiwi", "berry"];
-        var i=0;
-        while (i < arr.length) {
+        var i = 0;
+        while (true) {
+            if(arr.length == i)
+                break;
             alert("arr[" + i + "] = " + arr[i]);
 
             i++;
