@@ -5,42 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습문제 14번</title>
-    <script>
-        var year = {
-            sample1: 2004,
-            sample2: 2000,
-            sample3: 1473
-        };
+    <script>        
+        var input = prompt("년도를 입력해주세요. : ", "");
         
-        for (var i in year) {
-            var result = year[i] % 12 ;
-            if (result == 0) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 원숭이띠입니다.");
-            } else if (result == 1) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 닭띠입니다.");
-            } else if (result == 2) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 개띠입니다.");
-            } else if (result == 3) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 돼지띠입니다.");
-            } else if (result == 4) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 쥐띠입니다.");
-            } else if (result == 5) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 소띠입니다.");
-            } else if (result == 6) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 범띠입니다.");
-            } else if (result == 7) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 토끼띠입니다.");
-            } else if (result == 8) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 용띠입니다.");
-            } else if (result == 9) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 뱀띠입니다.");
-            } else if (result == 10) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 말띠입니다.");
-            } else if (result == 11) {
-                alert (i + "은(는) " + year[i] + "년 이고, " + year[i] + "년은(는) 양띠입니다.");
-            } 
-        }
-        
+        var result = input % 12;
+
+        if (result == 0) {
+            alert (input + "년은(는) 원숭이띠입니다.");
+        } else if (result == 1) {
+            alert (input + "년은(는) 닭띠입니다.");
+        } else if (result == 2) {
+            alert (input + "년은(는) 개띠입니다.");
+        } else if (result == 3) {
+            alert (input + "년은(는) 돼지띠입니다.");
+        } else if (result == 4) {
+            alert (input + "년은(는) 쥐띠입니다.");
+        } else if (result == 5) {
+            alert (input + "년은(는) 소띠입니다.");
+        } else if (result == 6) {
+            alert (input + "년은(는) 범띠입니다.");
+        } else if (result == 7) {
+            alert (input + "년은(는) 토끼띠입니다.");
+        } else if (result == 8) {
+            alert (input + "년은(는) 용띠입니다.");
+        } else if (result == 9) {
+            alert (input + "년은(는) 뱀띠입니다.");
+        } else if (result == 10) {
+            alert (input + "년은(는) 말띠입니다.");
+        } else if (result == 11) {
+            alert (input + "년은(는) 양띠입니다.");
+        } 
     </script>
 </head>
 <body>
