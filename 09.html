@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callBack</title>
+    <script>
+        function callbackTest (callback) {
+            for(var i = 0; i < 10; i++) {
+                callback();
+            }
+        }
+
+        var callback = function () {
+            alert ('함수 호출하겠습니다 !');
+        }
+
+        callbackTest(callback); // 익명함수를 변수에 대입해놓고 매개변수에 사용
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
